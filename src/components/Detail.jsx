@@ -7,11 +7,9 @@ function Detail() {
   const { detail } = useSelector((state) => state.characters);
 
   useEffect(() => {
-    dispatch(getCharactersById(1));
-  }, []);
-  return (
-    <div>{Object.keys(detail).length > 0 && <span>{detail.name}</span>}</div>
-  );
+    dispatch(getCharactersById(10));
+  }, [dispatch]);
+  return <div>{[Detail].length > 0 && <span>{detail.name}</span>}</div>;
 }
 
 export default Detail;

@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Characters />
       {/* Falta traer React Router Dom y pasar Detail a una ruta aparte para que no de conflicto */}
-      {/* <Detail /> */}
+      <Detail />
     </div>
   );
 }

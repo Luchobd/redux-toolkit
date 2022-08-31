@@ -4,8 +4,7 @@ import { getCharacters } from "../redux/characterActions";
 
 function Characters() {
   const dispatch = useDispatch();
-  const { characters } = useSelector((state) => state.characters);
-  console.log(characters);
+  const { characters, detail } = useSelector((state) => state.characters);
 
   useEffect(() => {
     dispatch(getCharacters());

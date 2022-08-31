@@ -11,6 +11,6 @@ export const getCharacters = () => (dispatch) => {
 export const getCharactersById = (id) => (dispatch) => {
   axios
     .get(`https://rickandmortyapi.com/api/character/${id}`)
-    .then((res) => dispatch(getAllCharacters(res.data)))
+    .then((res) => dispatch(getCharacterById(res.data)))
     .catch((e) => console.log(e));
 };
